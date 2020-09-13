@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Vova</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/more.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modalform.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="language">
+                    <a href="" class="language__text">Русский
+                        <svg class="language__arrow">
+                            <use xlink:href="#arrow"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo" data-scroll="#intro"><img src="images/logo.png" alt=""></div>
+                    <nav class="nav" id="nav">
+                        <a href="" class="nav__link" data-scroll="#about">О нас</a>
+                        <a href="" class="nav__link" data-scroll="#wedo">Услуги</a>
+                        <a href="" class="nav__link" data-scroll="#works">Портфолио</a>
+                        <a href="" class="nav__link" data-scroll="#reviews">Отзывы</a>
+                        <a href="" class="nav__link" data-scroll="#connection">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--    svg-->
+    <svg display="none">
+        <symbol id="dot" viewBox="0 0 426.667 426.667">
+            <g>
+                <path d="M213.333,106.667c-58.88,0-106.667,47.787-106.667,106.667S154.453,320,213.333,320S320,272.213,320,213.333
+				S272.213,106.667,213.333,106.667z"/>
+                <path d="M213.333,0C95.467,0,0,95.467,0,213.333s95.467,213.333,213.333,213.333S426.667,331.2,426.667,213.333
+				S331.2,0,213.333,0z M213.333,384c-94.293,0-170.667-76.373-170.667-170.667S119.04,42.667,213.333,42.667
+				S384,119.04,384,213.333S307.627,384,213.333,384z"/>
+            </g>
+        </symbol>
+        <symbol id="arrow" viewBox="0 0 451.847 451.847">
+            <g>
+                <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+		c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+		c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+            </g>
+        </symbol>
+        <symbol id="play" viewBox="0 0 779.652 779.652">
+            <g>
+                <path d="M679.503,349.728L151.09,9.181C119.742-7.703,83.832-5.951,83.832,54.688v670.58c0,55.408,38.525,64.17,67.258,45.506
+				l528.442-340.547C701.255,407.975,701.255,371.953,679.503,349.728z"/>
+            </g>
+        </symbol>
+        <symbol id="olx" viewBox="0 0 100 100">
+            <g id="surface1">
+                <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 100 50.003906 C 100 77.613281 77.613281 100 49.996094 100 C 22.382813 100 0 77.613281 0 50.003906 C 0 22.386719 22.382813 0 49.996094 0 C 77.613281 0 100 22.386719 100 50.003906 "/>
+                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(95.698547%,47.499084%,12.5%);fill-opacity:1;" d="M 92.382813 66.921875 L 79.90625 48.226563 L 89.464844 34.152344 C 90.589844 32.503906 90.332031 30.667969 88.90625 30.066406 C 87.472656 29.476563 85.226563 30.21875 83.914063 31.730469 L 75.410156 41.5 L 69.535156 32.683594 C 68.425781 31.019531 65.996094 30.152344 64.136719 30.746094 C 62.28125 31.339844 61.371094 33.34375 62.128906 35.195313 L 68.972656 49.089844 L 59.132813 60.21875 C 57.820313 61.734375 57.621094 64.347656 58.6875 66.03125 L 61.144531 69.925781 C 62.214844 71.617188 64.015625 71.644531 65.132813 69.992188 L 73.394531 57.808594 L 80.101563 70.105469 C 80.855469 71.960938 83.050781 73.035156 84.980469 72.515625 L 90.898438 70.902344 C 92.824219 70.371094 93.492188 68.582031 92.382813 66.921875 "/>
+                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(31.399536%,17.999268%,50.19989%);fill-opacity:1;" d="M 20.132813 64.007813 C 15.863281 64.007813 12.402344 58.046875 12.402344 50.691406 C 12.402344 43.34375 15.863281 37.390625 20.132813 37.390625 C 24.402344 37.390625 27.863281 43.34375 27.863281 50.691406 C 27.863281 58.046875 24.402344 64.007813 20.132813 64.007813 M 20.132813 31.117188 C 10.957031 31.117188 3.523438 39.878906 3.523438 50.691406 C 3.523438 61.507813 10.957031 70.273438 20.132813 70.273438 C 29.300781 70.273438 36.742188 61.507813 36.742188 50.691406 C 36.742188 39.878906 29.300781 31.117188 20.132813 31.117188 "/>
+                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(65.899658%,70.999146%,21.998596%);fill-opacity:1;" d="M 41.800781 25.78125 C 39.496094 25.765625 38.707031 27.667969 38.847656 29.613281 L 38.851563 54.71875 C 38.925781 57.078125 40.089844 58.527344 42.738281 58.566406 L 56.578125 58.574219 C 58.769531 58.613281 59.957031 58.109375 60.164063 56.308594 L 60.164063 51.957031 C 60.136719 49.945313 58.09375 49.953125 56.695313 49.984375 L 51.007813 49.984375 C 48.75 49.964844 48.230469 49.589844 48.140625 47.363281 L 48.164063 29.53125 C 48.207031 27.449219 47.484375 25.789063 45.179688 25.773438 L 41.800781 25.78125 "/>
+            </g>
+        </symbol>
+        <symbol id="close" viewBox="0 0 512 512">
+            <g>
+                <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M383.22,338.79
+			c11.7,11.7,11.7,30.73,0,42.44c-11.61,11.6-30.64,11.79-42.44,0L257,297.42l-85.79,83.82c-11.7,11.7-30.73,11.7-42.44,0
+			c-11.7-11.7-11.7-30.73,0-42.44l83.8-83.8l-83.8-83.8c-11.7-11.71-11.7-30.74,0-42.44c11.71-11.7,30.74-11.7,42.44,0L257,212.58
+			l83.78-83.82c11.68-11.68,30.71-11.72,42.44,0c11.7,11.7,11.7,30.73,0,42.44l-83.8,83.8L383.22,338.79z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">We Deliver <br> With Speed</h1>
+                <div class="intro__text"><p>When an unknown printer took a galley of type and scrambled <br>
+                    it to make a type specimen book. It has survived not only five centuries</p></div>
+                <div class="intro__benefits">
+                    <div class="benefits__item">amazing</div>
+                    <svg class="benefits__dot">
+                        <use xlink:href="#dot"></use>
+                    </svg>
+                    <div class="benefits__item">quick</div>
+                    <svg class="benefits__dot">
+                        <use xlink:href="#dot"></use>
+                    </svg>
+                    <div class="benefits__item">24/7 support</div>
+                </div>
+                <div class="intro__buttons">
+                    <button class="intro__btn">contact us</button>
+                    <button class="intro__btn intro__btn--tel">+380-95-111-89-04</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__accordeon">
+                    <div class="about__title">
+                        <div class="about__title--first">express</div>
+                        <div class="about__title--second">logistics</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__header">
+                            <div class="accordeon__title">Track your shipment</div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__header">
+                            <div class="accordeon__title">New login</div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__header">
+                            <div class="accordeon__title">Find Dhl point</div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__header">
+                            <div class="accordeon__title">find a service</div>
+                        </div>
+                        <div class="about__content">
+                            <div class="accordeon__text">International Services to Another Country</div>
+                            <div class="accordeon__list">
+                                <ul class="service__list--item service__list--item--accordeon">
+                                    <li>Emergency</li>
+                                    <li>Time Critical</li>
+                                    <li>Less Urgent</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <div class="about__image--inner">
+                        <div class="about__img">
+                            <img src="images/about/about.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="service__outer">
+            <div class="service__video">
+                <video src="images/service/videoplayback.mp4" class="video" autoplay muted loop></video>
+            </div>
+            <div class="service__cont">
+            <div class="container">
+                <h2 class="service__title">One of the best international service provider</h2>
+                <a href="#" class="service__play">
+                    <svg class="service__play--btn">
+                        <use xlink:href="#play"></use>
+                    </svg>
+                </a>
+                <div class="service__inner">
+                    <div class="service__item">
+                        <div class="service__image">
+                            <img src="images/service/service1.png" alt="">
+                        </div>
+                        <div class="service__content">
+                            <div class="service__suptitle">Aerospace Provider</div>
+                            <div class="service__list">
+                                <ul class="service__list--item">
+                                    <li>When an unknown printer took.</li>
+                                    <li>Make a type specimen book.</li>
+                                    <li>It has survived.</li>
+                                    <li>Airlines unknown specimen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__image">
+                            <img src="images/service/service1.png" alt="">
+                        </div>
+                        <div class="service__content">
+                            <div class="service__suptitle">Aerospace Provider</div>
+                            <div class="service__list">
+                                <ul class="service__list--item">
+                                    <li>When an unknown printer took.</li>
+                                    <li>Make a type specimen book.</li>
+                                    <li>It has survived.</li>
+                                    <li>Airlines unknown specimen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__image">
+                            <img src="images/service/service1.png" alt="">
+                        </div>
+                        <div class="service__content">
+                            <div class="service__suptitle">Aerospace Provider</div>
+                            <div class="service__list">
+                                <ul class="service__list--item">
+                                    <li>When an unknown printer took.</li>
+                                    <li>Make a type specimen book.</li>
+                                    <li>It has survived.</li>
+                                    <li>Airlines unknown specimen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__image">
+                            <img src="images/service/service1.png" alt="">
+                        </div>
+                        <div class="service__content">
+                            <div class="service__suptitle">Aerospace Provider</div>
+                            <div class="service__list">
+                                <ul class="service__list--item">
+                                    <li>When an unknown printer took.</li>
+                                    <li>Make a type specimen book.</li>
+                                    <li>It has survived.</li>
+                                    <li>Airlines unknown specimen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__image">
+                            <img src="images/service/service1.png" alt="">
+                        </div>
+                        <div class="service__content">
+                            <div class="service__suptitle">Aerospace Provider</div>
+                            <div class="service__list">
+                                <ul class="service__list--item">
+                                    <li>When an unknown printer took.</li>
+                                    <li>Make a type specimen book.</li>
+                                    <li>It has survived.</li>
+                                    <li>Airlines unknown specimen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__image">
+                            <img src="images/service/service1.png" alt="">
+                        </div>
+                        <div class="service__content">
+                            <div class="service__suptitle">Aerospace Provider</div>
+                            <div class="service__list">
+                                <ul class="service__list--item">
+                                    <li>When an unknown printer took.</li>
+                                    <li>Make a type specimen book.</li>
+                                    <li>It has survived.</li>
+                                    <li>Airlines unknown specimen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="more">
+        <div class="container">
+            <div class="more__inner">
+                <div class="more__left">
+                    <h2 class="more__title">Excellence. Simply delivered.</h2>
+                    <div class="more__text">
+                        <p>International express deliveries; global freight forwarding by air, sea, road and rail;
+                            warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;
+                            and other customized logistic services – with everything DHL does, we
+                            help connect people and improve their lives.</p>
+                    </div>
+                </div>
+                <div class="more__right">
+                    <button class="more__btn">learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brands">
+        <div class="container">
+            <div class="brands__inner">
+                <div class="brands__item">
+                    <img src="images/brands/brand1.png" alt="" class="brands__img">
+                </div>
+                <div class="brands__item">
+                    <img src="images/brands/brand2.png" alt="" class="brands__img">
+                </div>
+                <div class="brands__item">
+                    <img src="images/brands/brand3.png" alt="" class="brands__img">
+                </div>
+                <div class="brands__item">
+                    <img src="images/brands/brand4.png" alt="" class="brands__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="modal__form--dialog">
+            <button class="modal__close" type="button" data-close>
+                <svg class="close__img">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </button>
+            <div class="modal__form--content">
+                <div class="modal__logo"><img src="images/logo.png" alt=""></div>
+                <h2 class="list__title"></h2>
+                    <ol>
+                        <li>Оставьте свои контактные данные</li>
+                        <li>Наш консультант свяжется с вами</li>
+                    </ol>
+                <form action="/" method="post" class="modalform" id="modalform">
+                    <input type="hidden" name="project_name" value="Алмазная резка">
+                    <input type="hidden" name="admin_email" value="Betonorezka.almaz@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заявка с сайта">
+
+                    <label for="input__name">Ваше имя:</label>
+                    <input type="text" name="Имя" placeholder="Ваше имя" id="input__name" class="input__name" required>
+                    <label for="input__tel">Ваш телефон:</label>
+                    <input type="tel"  name="Телефон" placeholder="+38(0___)___-____" id="input__tel" class="input__tel" required>
+                    <label for="input__email">Ваша почта:</label>
+                    <input type="email" placeholder="example@gmail.com" id="input__email" class="input__email" required>
+                    <label for="input__textarea">Напишите, что вы хотите:</label>
+                    <textarea name="" cols="30" rows="10" id="input__textarea" style="height: 130px"></textarea>
+                    <button type="submit" class="button__form">Заказать консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <a href="#" class="footer__mail">guk2001y@gmail.com</a>
+                    <div class="footer__text"><p>Copyright &copy; 2020 . all rights reserved.</p></div>
+                    <a href="#" class="footer__olx" target="_blank">
+                        <svg class="olx__img">
+                            <use xlink:href="#olx"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <img src="images/logo.png" alt="" class="footer__logo">
+                </div>
+                <div class="footer__item">
+                    <div class="footer__text footer__text--tel">Украина:</div>
+                    <a href="" class="footer__tel">+380 95 111 89 04</a>
+                    <a href="" class="footer__tel">+380 95 111 89 04</a>
+                    <a href="" class="footer__tel">+380 95 111 89 04</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

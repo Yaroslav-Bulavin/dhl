@@ -1,0 +1,31 @@
+.brands {
+    padding: 70px 0 50px 0;
+}
+.brands__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.brands__item {
+    width: 25%;
+    max-width: 270px;
+    height: 130px;
+    background: #f7f7f7;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: all 0.2s linear;
+    border: 2px solid rgba(186, 0, 0, 0.1);
+}
+.brands__img {
+    margin:  45px auto 0;
+    transition: all 0.2s linear;
+ }
+.brands__img:first-child {
+    margin-top: 50px;
+}
+.brands__item:hover {
+    border: 2px solid #ba0000;
+    box-shadow: 0 10px 18px rgba(186, 0, 0, 0.4);
+}
+.brands__item:hover .brands__img {
+    transform: scale(1.1);
+}
