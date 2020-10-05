@@ -1,0 +1,116 @@
+.reviews {
+    background-color: #ba0000;
+    padding: 60px 0;
+}
+.container--reviews {
+    position: relative;
+}
+.reviews__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.reviews__item {
+    position: relative;
+    transition: all 0.2s linear;
+}
+.reviews__name {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 295px;
+    padding: 10px 10px;
+    text-align: center;
+    background: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+.reviews__image {
+    transition: all 0.2s linear;
+    overflow: hidden;
+    width: 100%;
+    max-width: 370px;
+    height: 200px;
+}
+.reviews__image img {
+    transition: all 0.2s linear;
+}
+.reviews__text {
+    padding: 30px 20px 20px;
+    font-size: 15px;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 370px;
+    background-color: #fff;
+    color: #000;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 0 10px;
+    border: 1px solid #000;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background-color: #000;
+}
+.swiper-container1 {
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+    padding-bottom: 50px;
+}
+.swiper-button-next.reviews,
+.swiper-button-prev.reviews {
+    top: 50%;
+    background-color: transparent;
+}
+.reviews__item:hover .reviews__name {
+    color: #ffcc00;
+}
+.reviews__item:hover .reviews__image img {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1300px) {
+    .swiper-button-next.reviews,
+    .swiper-button-prev.reviews {
+        top: 4%;
+    }
+}
+@media (max-width: 1030px) {
+    .reviews__title {
+        font-size: 36px;
+    }
+}
+@media (max-width: 775px) {
+    .reviews__image {
+        height: 186px;
+    }
+    .reviews__name {
+        top: 165px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 3%;
+    }
+    .swiper-button-next {
+        right: 40px;
+    }
+    .swiper-button-prev {
+        left: 40px;
+    }
+}
+@media (max-width: 460px) {
+    .reviews {
+        padding: 30px 0;
+    }
+    .reviews__title {
+        font-size: 27px;
+    }
+}

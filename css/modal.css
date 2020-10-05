@@ -1,0 +1,95 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.modal.show {
+    display: flex;
+}
+.modal__dialog {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    height: 420px;
+    background-color: #ffcc00;
+    border-radius: 30px;
+}
+.modal__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal__buttons {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 15px;
+    transition: all 0.2s linear;
+}
+.modal__buttons:first-child {
+    margin-top: 30px;
+}
+.modal__buttons:last-child {
+    margin-bottom: 0;
+}
+.modal__buttons button {
+    display: flex;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    background: transparent;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
+.modal__buttons:hover button,
+.modal__buttons:focus button{
+    background: #ba0000;
+}
+.modal__buttons:hover p,
+.modal__buttons:focus p
+{
+    color: #fff;
+}
+.modal__buttons button p {
+    width: 50%;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    padding-right: 10px;
+    transition: all 0.2s linear;
+}
+.language__btn {
+    width: 50%;
+    max-width: 50px;
+    height: 50px;
+}
+.modal__exit {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    z-index: 1;
+    border: 0;
+    font-size: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+.icon__close {
+    width: 20px;
+    height: 20px;
+    transition: transform .2s linear;
+}
+.icon__close:hover {
+    transform: rotate(45deg);
+}
